@@ -239,73 +239,69 @@ sched:[
 mustNames:["Saint-Tropez","Cannes","Îles de Lérins"],
 sched:[
   ["9:00","Antibes 1 – raňajky na trhu Marché Provençal"],
-  ["10:00","Antibes 1 – Musée Picasso – Château Grimaldi (So otvorené 10:00–18:00)",true],
+  ["10:00","Antibes 1 – Musée Picasso – Château Grimaldi (So otvorené 10:00–18:00)",true,["A"]],
   ["11:30","Antibes 1 – Odchod do Cannes (30 min)"],
-  ["12:00","Cannes 2 – La Croisette, Palais des Festivals, Vieux-Port",true,["A"]],
+  ["12:00","Cannes 2 – La Croisette, Palais des Festivals, Vieux-Port",true,["B"]],
   ["13:00","Cannes 2 – obed v centre"],
   ["13:45","Cannes 2 – Odchod do Port Grimaud (45 min)"],
-  ["14:30","Port Grimaud 3 – kanálové mestečko",false,["B"]],
-  ["15:00","Port Grimaud 3 – Odchod do Saint-Tropez (15 min)"],
-  ["15:15","Saint-Tropez 4 – Vieux Port, Place des Lices, Citadelle",true,["C"]],
-  ["19:30","Saint-Tropez 4 – Odchod do Avignonu (2h 30 min)"],
-  ["22:00","Avignon 5 – príchod, check-in"]]},
-// 4 – 5.4. Nedeľa (Veľkonočná nedeľa)  routePts: Avignon(1) Marseille(2) Avignon(3-loop)
+  ["14:30","Port Grimaud – kanálové mestečko",false,["C"]],
+  ["15:00","Port Grimaud – Odchod do Saint-Tropez (15 min)"],
+  ["15:15","Saint-Tropez 3 – Vieux Port, Place des Lices, Citadelle",true,["D"]],
+  ["19:30","Saint-Tropez 3 – Odchod do Avignonu (2h 30 min)"],
+  ["22:00","Avignon 4 – príchod, check-in"]]},
+// 4 – 5.4. Nedeľa (Veľkonočná nedeľa)  routePts: Avignon(1) Roussillon(2) Gordes(3) Sénanque(4) L'Isle-sur-la-Sorgue(5) Avignon(6-loop)
 {must:[
-  {city:"Marseille",name:"Notre-Dame de la Garde",desc:"bazilika na 162 m s 360° panorámou mesta, prístavu a mora"},
-  {city:"Marseille",name:"Vieux-Port a Le Panier",desc:"srdce Marseille, ranný rybársky trh a najstaršia štvrť mesta"},
-  {city:"Marseille",name:"Calanques",desc:"dramatické biele vápencové útesy siahajúce do smaragdového mora"}],
-mustNames:["Notre-Dame de la Garde – vyhliadka","Vieux-Port de Marseille","Le Panier"],
+  {city:"Roussillon",name:"Sentier des Ocres",desc:"červené a oranžové okrové skaly – až 17 odtieňov okrovej farby v prírode"},
+  {city:"Gordes",name:"Stredoveká dedinka na brale",desc:"jedna z najfotografovanejších dedín Francúzska s panorámou na Luberon"},
+  {city:"Sénanque",name:"Abbaye de Sénanque",desc:"cistercitský kláštor z 12. stor. v doline medzi levanduľovými záhonmi"}],
+mustNames:["Roussillon","Gordes","Sénanque Abbey"],
 sched:[
-  ["9:00","Avignon 1 – Odchod (trasa A7)"],
-  ["~10:30","Marseille 2 – príchod"],
-  ["11:00","Marseille 2 – Notre-Dame de la Garde – panoráma 360°, votívne lode",true,["A"]],
-  ["11:45","Marseille 2 – Vieux-Port – prechádzka, MuCEM exteriér",true,["B","D"]],
-  ["12:15","Marseille 2 – Le Panier – najstaršia štvrť, street art, uličky",true,["C"]],
-  ["13:00","Marseille 2 – obed na Vieux-Port (bouillabaisse alebo fritura)"],
-  ["14:30","Calanques 3 – Calanque de Sormiou – zastávka",false,["F"]],
-  ["16:00","Calanques 3 – Odchod späť do Avignonu (1h 30 min)"],
-  ["17:30","Avignon 4 – príchod"],
-  ["18:00","Avignon 4 – Pont Saint-Bénézet, hradby – večerná prechádzka"],
-  ["20:00","Avignon 4 – večera"]]},
-// 5 – 6.4. Pondelok (Veľkonočný pondelok)  routePts: Avignon(1) PontduGard(2) Uzès(3) Gordes/Sénanque(4) Roussillon(5) Avignon(6-loop)
+  ["10:00","Avignon 1 – Odchod smerom na Roussillon (1h)"],
+  ["11:00","Roussillon 2 – Sentier des Ocres, červené skaly, farebné horniny",true],
+  ["12:45","Roussillon 2 – Odchod do Gordes (20 min)"],
+  ["13:30","Gordes 3 – dedinka na brale, obed, výhľad na Luberon",true],
+  ["15:30","Gordes 3 – Odchod do Sénanque (5 min)"],
+  ["16:00","Sénanque 4 – Abbaye de Sénanque, kláštor v levanduľovej doline",true],
+  ["17:00","Sénanque 4 – Odchod do L'Isle-sur-la-Sorgue (30 min)"],
+  ["18:00","L'Isle-sur-la-Sorgue 5 – kanály, vodné kolesá, antikváriá, prechádzka",false],
+  ["19:00","L'Isle-sur-la-Sorgue 5 – Odchod do Avignonu (25 min)"],
+  ["19:30","Avignon 6 – prechádzka po meste, Palais des Papes exteriér, večera"]]},
+// 5 – 6.4. Pondelok (Veľkonočný pondelok)  routePts: Avignon(1) LesBaux(2) Tarascon(3) PontDeGau(4) Arles(5) Avignon(6-loop)
+{must:[
+  {city:"Les Baux",name:"Carrières de Lumières",desc:"imerzívna svetelná show v kamennom lome – rezervovať vopred!"},
+  {city:"Les Baux",name:"Hrad a stredoveká citadela",desc:"ruiny hradu na skalnom ostrohu Alpilles s panorámou Provence a obed"},
+  {city:"Camargue",name:"Parc ornithologique de Pont de Gau",desc:"ornitologický park s flamingami, divokými koňmi a vzácnymi vtákmi pri Arles"}],
+mustNames:["Carrières de Lumières","Les Baux-de-Provence","Parc ornithologique de Pont de Gau"],
+sched:[
+  ["11:00","Avignon 1 – Odchod smerom na Les Baux (45 min)"],
+  ["12:00","Les Baux 2 – Carrières de Lumières – imerzívna show (rezervovať vopred!)",true],
+  ["13:00","Les Baux 2 – hrad, citadela, obed s výhľadom na Alpilles",true],
+  ["15:00","Les Baux 2 – Odchod do Tarascon (25 min)"],
+  ["15:30","Tarascon 3 – krátka prechádzka, hrad Tarascon pri Rhône",false],
+  ["15:55","Tarascon 3 – Odchod do Pont de Gau (45 min)"],
+  ["16:30","Pont de Gau 4 – Parc ornithologique de Pont de Gau – flamingos a vzácne vtáky",true],
+  ["18:45","Pont de Gau 4 – Odchod do Arles (15 min)"],
+  ["19:00","Arles 5 – večera a prechádzka starým mestom",true],
+  ["21:00","Arles 5 – Odchod späť do Avignonu (35 min)"],
+  ["21:35","Avignon 6 – príchod"]]},
+// 6 – 7.4. Utorok  routePts: Avignon(1) PontduGard(2) Uzès(3) Carcassonne(4)
 {must:[
   {city:"Avignon",name:"Palais des Papes",desc:"najväčší gotický palác sveta, sídlo pápežov 1309–1377 (UNESCO)"},
-  {city:"okolie Avignonu",name:"Pont du Gard",desc:"rímsky akvadukt UNESCO, 49 m vysoký, ráno bez turistov"},
-  {city:"Luberon",name:"Gordes a Abbaye de Sénanque",desc:"dedinka na skalnom brale a kláštor v doline levanduľových záhonov"}],
-mustNames:["Palais des Papes","Pont du Gard","Sénanque Abbey"],
+  {city:"okolie Avignonu",name:"Pont du Gard",desc:"rímsky akvadukt UNESCO, 49 m vysoký"},
+  {city:"Uzès",name:"Place aux Herbes a Duché d'Uzès",desc:"stredoveké mestečko s arkádami a jedinou románskou okrúhlou vežou vo Francúzsku"}],
+mustNames:["Palais des Papes","Pont du Gard","Uzès"],
 sched:[
-  ["9:00","Avignon 1 – Palais des Papes – prehliadka s audioguidom (1,5 h)",true,["A"]],
-  ["10:30","Avignon 1 – Pont Saint-Bénézet – vstup na most, výhľad na Rhône",false,["B"]],
-  ["11:15","Avignon 1 – Odchod na Pont du Gard (30 min)"],
-  ["11:45","Pont du Gard 2 – prechádzka pod mostom",true,["I"]],
-  ["12:30","Pont du Gard 2 – Odchod do Uzès (15 min)"],
-  ["12:45","Uzès 3 – obed a prechádzka Place aux Herbes",false,["E"]],
-  ["14:00","Uzès 3 – Odchod do Gordes / Sénanque (45 min)"],
-  ["14:45","Sénanque 4 – Abbaye de Sénanque, kláštor v doline",true,["J"]],
-  ["15:15","Gordes 4 – dedinka na brale, výhľad na Luberon",false,["F"]],
-  ["15:45","Gordes 4 – Odchod do Roussillon (15 min)"],
-  ["16:00","Roussillon 5 – Sentier des Ocres, farebné horniny",false,["G"]],
-  ["17:00","Roussillon 5 – Odchod späť do Avignonu (45 min)"],
-  ["17:45","Avignon 6 – večerná prechádzka po hradbách, Rue des Teinturiers"],
-  ["20:00","Avignon 6 – posledná večera v Avignone"]]},
-// 6 – 7.4. Utorok  routePts: Avignon(1) Arles(2) LesBaux(3) SaintesMaries(4) Carcassonne(5)
-{must:[
-  {city:"Arles",name:"Arènes d'Arles",desc:"rímsky amfiteáter UNESCO z 1. stor., stále využívaný na zápasy"},
-  {city:"Les Baux",name:"Carrières de Lumières",desc:"imerzívna svetelná show v kamennom lome – rezervovať vopred!"},
-  {city:"Les Baux",name:"Stredoveká citadela",desc:"ruiny hradu na skalnom ostrohu Alpilles s panorámou Provence"}],
-mustNames:["Arènes d'Arles","Carrières de Lumières","Les Baux-de-Provence"],
-sched:[
-  ["9:00","Avignon 1 – Odchod"],
-  ["9:35","Arles 2 – Arènes d'Arles (vstup), Place du Forum – Van Goghova kaviareň",true,["A","B"]],
-  ["11:00","Arles 2 – Odchod do Les Baux (25 min)"],
-  ["11:25","Les Baux 3 – Carrières de Lumières – imerzívna show (rezervovať vopred!)",true,["D"]],
-  ["12:30","Les Baux 3 – obed (výhľad na Alpilles)"],
-  ["13:30","Les Baux 3 – citadela, ruiny hradu, katapulty, Val d'Enfer",true,["C","K"]],
-  ["15:00","Les Baux 3 – Odchod do Camargue (45 min)"],
-  ["16:30","Saintes-Maries-de-la-Mer 4 – pláž, bazilika, jazero Vaccarès",false,["I"]],
-  ["17:30","Saintes-Maries-de-la-Mer 4 – Odchod do Carcassonne (2h 15 min)"],
-  ["19:45","Carcassonne 5 – príchod, check-in"],
-  ["20:30","Carcassonne 5 – večera"]]},
+  ["10:00","Avignon 1 – Palais des Papes – prehliadka s audioguidom (1,5 h)",true],
+  ["11:30","Avignon 1 – Pont Saint-Bénézet – krátka prechádzka"],
+  ["11:50","Avignon 1 – Odchod na Pont du Gard (30 min)"],
+  ["12:00","Pont du Gard 2 – prechádzka pod akvaduktom",true],
+  ["12:45","Pont du Gard 2 – Odchod do Uzès (15 min)"],
+  ["13:00","Uzès 3 – obed, Place aux Herbes, Duché d'Uzès",true],
+  ["14:30","Uzès 3 – Odchod do Carcassonne (2h 30 min)"],
+  ["17:00","Carcassonne 4 – príchod, check-in"],
+  ["17:30","Carcassonne 4 – La Cité – prvý pohľad, večerná prechádzka po hradbách"],
+  ["19:00","Carcassonne 4 – Canal du Midi – večerná prechádzka pod platanmi"],
+  ["20:00","Carcassonne 4 – večera"]]},
 // 7 – 8.4. Streda  routePts: Carcassonne(1) Mirepoix(2) Foix(3) Carcassonne(4-loop)
 {must:[
   {city:"Carcassonne",name:"Château Comtal a dvojité hradby",desc:"ráno pred davom – oba prstence stredovekých hradieb a múzeum"},
@@ -447,7 +443,7 @@ var days=[
  {ltr:"I",n:"Corniche d'Or",w:"Corniche d'Or",t:"n",la:43.4300,lo:6.9600,x:"1h od Antibes",tm:"1h",d:`Vyhliadková pobrežná cesta N98 cez červené porfýrové skaly Massif de l'Estérel. Červené skaly kontrastujúce s azúrovým morom tvoria obraz ako z maľby.`}
 ]},
 // 2 – 3.4. Piatok (Veľký piatok)
-{date:"3.4.",day:"Piatok",prog:"Grasse, Èze, Nice, Antibes",route:"Antibes → Grasse → Èze → Nice → Antibes",t:"—",tn:"—",acc:"Antibes",seg:"ca",cx:[43.76,7.06],cz:10,places:[
+{date:"3.4.",day:"Piatok",prog:"Grasse, Èze, Nice",route:"Antibes → Grasse → Èze → Nice → Antibes",t:"—",tn:"—",acc:"Antibes",seg:"ca",cx:[43.76,7.06],cz:10,places:[
  {ltr:"A",n:"Antibes – Vieil Antibes & Musée Picasso",w:"Antibes",t:"c",la:43.5803,lo:7.1241,x:"v Antibes",tm:"1h",hours:"Musée Picasso: 10:00–18:00 Ut–Ne; Po ZATVORENÉ",website:"https://www.antibes-juanlespins.com/les-musees/picasso",d:`Stredoveké opevnené mesto s trhom Marché Provençal každé ráno okrem pondelka. Château Grimaldi slúži ako Musée Picasso – Picasso tu strávil celý rok 1946.`},
  {ltr:"B",n:"Promenade des Anglais",w:"Promenade des Anglais",t:"c",la:43.6954,lo:7.2662,x:"30 min od Antibes",tm:"30 min",d:`7 km dlhá promenáda lemovaná palmami pozdĺž Azúrového mora je symbolom Nice.`},
  {ltr:"C",n:"Vieux Nice & Cours Saleya",w:"Old Nice",t:"c",la:43.6964,lo:7.2766,x:"30 min od Antibes",tm:"1h",hours:"Trh Cours Saleya: 6:00–13:00 Ut–Ne (Po antický trh)",d:`Stará Nice je labyrint úzkych uličiek s farebnými barokovými fasádami. Cours Saleya je živé námestie s každodenným kvetinovým a potravinovým trhom.`},
@@ -472,7 +468,7 @@ var days=[
  {ltr:"H",n:"Presqu'île de Giens",w:"Giens",t:"n",la:43.0397,lo:6.1481,x:"1h 30 min od Antibes",tm:"1h",d:`Polostrov spojený s pevninou dvoma piesočnými zábranami obklopuje lagúnu Pesquiers – biotop flamingov. Z južného cípu odplávajú trajekty na ostrov Porquerolles.`}
 ]},
 // 4 – 5.4. Nedeľa (Veľkonočná nedeľa)
-{date:"5.4.",day:"Nedeľa",prog:"Výlet z Avignonu do Marseille a okolia",route:"výlet z Avignonu",t:"—",tn:"—",acc:"Avignon",seg:"pr",cx:[43.55,5.20],cz:8,places:[
+{date:"5.4.",day:"Nedeľa",prog:"Roussillon, Gordes, Sénanque, L'Isle-sur-la-Sorgue",route:"výlet z Avignonu",t:"—",tn:"—",acc:"Avignon",seg:"pr",cx:[43.93,5.10],cz:9,places:[
  {ltr:"A",n:"Notre-Dame de la Garde",w:"Notre-Dame de la Garde",t:"c",la:43.2840,lo:5.3710,x:"zastávka v Marseille",tm:"30 min",hours:"7:00–19:00 denne (vstup zadarmo)",website:"https://www.notredamedelagarde.com",d:`Neorománska bazilika z roku 1864 na vrchole 162 m vysokého kopca. Z jej terás je 360° výhľad na Marseille, prístav a Stredozemné more. Vstup zadarmo.`},
  {ltr:"B",n:"Vieux-Port de Marseille",w:"Vieux-Port de Marseille",t:"c",la:43.2951,lo:5.3738,x:"zastávka v Marseille",tm:"30 min",d:`Historický prístav obklopený kaviarňami je srdcom Marseille a miestom každodenného rybárskeho trhu do 9:00. Bouillabaisse v niektorej z reštaurácií je povinnosťou.`},
  {ltr:"C",n:"Le Panier",w:"Le Panier",t:"c",la:43.2998,lo:5.3703,x:"zastávka v Marseille",tm:"30 min",d:`Najstaršia štvrť Marseille na kopci nad Vieux-Portom – labyrint úzkych uličiek s farebnými murálmi. Grécki kolonizátori tu žili pred 2 600 rokmi.`},
@@ -483,7 +479,7 @@ var days=[
  {ltr:"H",n:"Silvacane Abbey",w:"Silvacane Abbey",t:"n",la:43.7200,lo:5.4100,x:"30 min od Avignonu",tm:"30 min",hours:"9:30–17:00 Ut–Ne; Po ZATVORENÉ",website:"https://silvacane.monuments-nationaux.fr",d:`Cistercitské opátstvo z 12. stor. v tichej krajine pri rieke Durance – jedno z troch sesterských cistercitských kláštorov Provence. Vstupné okolo 8 €.`}
 ]},
 // 5 – 6.4. Pondelok (Veľkonočný pondelok)
-{date:"6.4.",day:"Pondelok",prog:"Avignon, Pont du Gard, Gordes, Sénanque",route:"výlet z Avignonu",t:"—",tn:"—",acc:"Avignon",seg:"pr",cx:[43.98,5.00],cz:9,places:[
+{date:"6.4.",day:"Pondelok",prog:"Carrières de Lumières, Les Baux, Tarascon, Pont de Gau, Arles",route:"výlet z Avignonu",t:"—",tn:"—",acc:"Avignon",seg:"pr",cx:[43.98,5.00],cz:9,places:[
  {ltr:"A",n:"Palais des Papes",w:"Palace of the Popes, Avignon",t:"c",la:43.9514,lo:4.8079,x:"v Avignone",tm:"1h 30 min",hours:"9:00–19:00 denne",website:"https://www.palais-des-papes.com",d:`Najväčší gotický palác sveta – sídlo pápežov 1309–1377. Komplex 15 000 m² na zozname UNESCO. Audioguide vás prevedie komnatami so zvyškami fresiek. Vstupné okolo 12 €.`},
  {ltr:"B",n:"Pont Saint-Bénézet",w:"Pont Saint-Bénézet",t:"c",la:43.9524,lo:4.8053,x:"v Avignone",tm:"30 min",hours:"9:00–19:00 denne",website:"https://www.avignon-pont.com",d:`Legendárny most z konca 12. stor. – dnes stoja len štyri oblúky trčiace do Rhôny. Vstupné okolo 5 €.`},
  {ltr:"C",n:"L'Isle-sur-la-Sorgue",w:"L'Isle-sur-la-Sorgue",t:"c",la:43.9196,lo:5.0492,x:"30 min od Avignonu",tm:"1h",hours:"Veľkonočný jarmok – mimoriadne podujatie! (ned.–pon.)",d:`Mestečko na kanáloch rieky Sorgue svetoznáme pre antické trhy. Veľkonočný pondelok je jedným z NAJVÄČŠÍCH dní antického jarmoku – výnimočné podujatie!`},
@@ -498,7 +494,7 @@ var days=[
  {ltr:"L",n:"Dentelles de Montmirail",w:"Dentelles de Montmirail",t:"n",la:44.1800,lo:5.0500,x:"1h od Avignonu",tm:"1h",d:`Skalné zuby Provence – ostrý vápencový hrebeň viditeľný z diaľky. Krátke turistické chodníky na priesmyky s panorámou na vinohradnícke dediny.`}
 ]},
 // 6 – 7.4. Utorok
-{date:"7.4.",day:"Utorok",prog:"Arles, Les Baux, Camargue, presun do Carcassonne",route:"Avignon → Arles → Les Baux → Carcassonne",t:"3:30",tn:"3:30",acc:"Carcassonne",seg:"la",cx:[43.63,4.70],cz:9,places:[
+{date:"7.4.",day:"Utorok",prog:"Avignon – Palais des Papes, Pont du Gard, Uzès, presun do Carcassonne",route:"Avignon → Pont du Gard → Uzès → Carcassonne",t:"3:00",tn:"3:00",acc:"Carcassonne",seg:"la",cx:[43.63,4.70],cz:9,places:[
  {ltr:"A",n:"Arènes d'Arles",w:"Arles Amphitheatre",t:"c",la:43.6773,lo:4.6302,x:"35 min od Avignonu",tm:"45 min",hours:"9:00–19:00 denne",website:"https://www.arenes-arles.com",d:`Rímsky amfiteáter z 1. stor. n. l. na zozname UNESCO s kapacitou 21 000 miest. Vstup okolo 9 €.`},
  {ltr:"B",n:"Arles – Place du Forum & LUMA",w:"Arles",t:"c",la:43.6768,lo:4.6268,x:"35 min od Avignonu",tm:"1h",hours:"LUMA Arles: 10:00–19:00 St–Po; Ut ZATVORENÉ",website:"https://www.luma-arles.org",d:`Place du Forum – Van Gogh tu namaľoval Nočnú kaviareň. Futuristická LUMA Arles vo Frank Gehryho veži je zaujímavá aj zvonku.`},
  {ltr:"C",n:"Les Baux-de-Provence",w:"Les Baux-de-Provence",t:"c",la:43.7443,lo:4.7927,x:"55 min od Avignonu",tm:"1h 30 min",hours:"Citadela: 9:00–19:30 denne",website:"https://www.lesbaux-provence.com",d:`Stredoveká citadela na vápencovom ostrohu Alpilles s panorámou Provence. Ruiny hradu s katapultmi prístupné za vstupné.`},
@@ -666,10 +662,10 @@ var routePts=[
  [{n:"Záhorská Bystrica",la:48.2284,lo:17.0258},{n:"Sirmione",la:45.4906,lo:10.6094},{n:"Verona",la:45.4393,lo:10.9940},{n:"Sirmione",la:45.4906,lo:10.6094}],
  [{n:"Sirmione",la:45.4906,lo:10.6094},{n:"Monaco",la:43.7374,lo:7.4238},{n:"Èze",la:43.7271,lo:7.3619},{n:"Antibes",la:43.5804,lo:7.1233}],
  [{n:"Antibes",la:43.5804,lo:7.1233},{n:"Grasse",la:43.6592,lo:6.9258},{n:"Èze",la:43.7271,lo:7.3619},{n:"Nice",la:43.6954,lo:7.2662},{n:"Antibes",la:43.5804,lo:7.1233}],
- [{n:"Antibes",la:43.5804,lo:7.1233},{n:"Cannes",la:43.5528,lo:7.0274},{n:"Port Grimaud",la:43.2729,lo:6.5797},{n:"Saint-Tropez",la:43.2723,lo:6.6398},{n:"Avignon",la:43.9493,lo:4.8055}],
- [{n:"Avignon",la:43.9493,lo:4.8055},{n:"Marseille",la:43.2965,lo:5.3698},{n:"Calanques",la:43.2125,lo:5.4180},{n:"Avignon",la:43.9493,lo:4.8055}],
- [{n:"Avignon",la:43.9493,lo:4.8055},{n:"Pont du Gard",la:43.9474,lo:4.5355},{n:"Uzès",la:44.0126,lo:4.4198},{n:"Gordes/Sénanque",la:43.9256,lo:5.1848},{n:"Roussillon",la:43.8986,lo:5.2890},{n:"Avignon",la:43.9493,lo:4.8055}],
- [{n:"Avignon",la:43.9493,lo:4.8055},{n:"Arles",la:43.6773,lo:4.6302},{n:"Les Baux-de-Provence",la:43.7443,lo:4.7927},{n:"Saintes-Maries-de-la-Mer",la:43.4540,lo:4.4272},{n:"Carcassonne",la:43.2072,lo:2.3647}],
+ [{n:"Antibes",la:43.5804,lo:7.1233},{n:"Cannes",la:43.5528,lo:7.0274},{n:"Saint-Tropez",la:43.2723,lo:6.6398},{n:"Avignon",la:43.9493,lo:4.8055}],
+ [{n:"Avignon",la:43.9493,lo:4.8055},{n:"Roussillon",la:43.8986,lo:5.2890},{n:"Gordes",la:43.9116,lo:5.1994},{n:"Sénanque",la:43.9256,lo:5.1848},{n:"L'Isle-sur-la-Sorgue",la:43.9196,lo:5.0492},{n:"Avignon",la:43.9493,lo:4.8055}],
+ [{n:"Avignon",la:43.9493,lo:4.8055},{n:"Les Baux-de-Provence",la:43.7443,lo:4.7927},{n:"Tarascon",la:43.8063,lo:4.6597},{n:"Pont de Gau",la:43.5050,lo:4.3803},{n:"Arles",la:43.6773,lo:4.6302},{n:"Avignon",la:43.9493,lo:4.8055}],
+ [{n:"Avignon",la:43.9493,lo:4.8055},{n:"Pont du Gard",la:43.9474,lo:4.5355},{n:"Uzès",la:44.0126,lo:4.4198},{n:"Carcassonne",la:43.2072,lo:2.3647}],
  [{n:"Carcassonne",la:43.2072,lo:2.3647},{n:"Mirepoix",la:43.0905,lo:1.8730},{n:"Foix",la:42.9640,lo:1.6052},{n:"Carcassonne",la:43.2072,lo:2.3647}],
  [{n:"Carcassonne",la:43.2127,lo:2.3538},{n:"Montpellier",la:43.6083,lo:3.8790},{n:"Aigues-Mortes",la:43.5664,lo:4.1927},{n:"Salins du Midi",la:43.5200,lo:4.1400},{n:"Nîmes",la:43.8363,lo:4.3602}],
  [{n:"Nîmes",la:43.8363,lo:4.3602},{n:"Lyon",la:45.7602,lo:4.8267},{n:"Ženeva",la:46.2044,lo:6.1432}],
